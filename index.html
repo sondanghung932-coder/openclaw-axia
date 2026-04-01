@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenClaw - 您的全能数字助理“阿虾”</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+        .lobster-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #ef4444 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 glass-card shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl font-bold lobster-gradient bg-clip-text text-transparent">OpenClaw</span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#features" class="hover:text-blue-600 transition">核心功能</a>
+                <a href="#personality" class="hover:text-blue-600 transition">助理人设</a>
+                <a href="#tech" class="hover:text-blue-600 transition">技术架构</a>
+                <a href="#contact" class="hover:text-blue-600 transition">开始使用</a>
+            </div>
+            <button class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition shadow-lg">
+                立即咨询
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+                        不仅仅是 AI，<br>更是懂您的<span class="text-blue-600">“阿虾”</span>
+                    </h1>
+                    <p class="text-xl text-slate-600 mb-8 max-w-lg">
+                        基于 OpenClaw 开源框架打造的私人助理，具备跨平台连接、自动化操作与深度记忆能力。让您的工作更高效，生活更有趣。
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
+                        <a href="#features" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold shadow-xl hover:bg-blue-700 transition text-center">
+                            探索功能
+                        </a>
+                        <a href="openclaw_demo.mp4" class="bg-white border-2 border-slate-200 px-8 py-4 rounded-xl font-bold hover:border-blue-600 hover:text-blue-600 transition text-center">
+                            查看演示视频
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-16 md:mt-0 flex justify-center relative">
+                    <div class="w-64 h-64 md:w-80 md:h-80 bg-blue-100 rounded-full absolute animate-pulse"></div>
+                    <div class="relative animate-float">
+                        <span class="text-[120px] md:text-[160px]">🦞</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">为什么选择 OpenClaw & 阿虾？</h2>
+                <div class="w-20 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Feature 1 -->
+                <div class="p-8 rounded-3xl bg-slate-50 hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-6 text-2xl shadow-lg shadow-blue-200">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">持久深度记忆</h3>
+                    <p class="text-slate-600">
+                        不同于传统的单次对话 AI，阿虾拥有长期记忆。他记得老板的偏好、过往的决策和重要的日程，实现真正的个性化服务。
+                    </p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="p-8 rounded-3xl bg-slate-50 hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                    <div class="w-16 h-16 bg-red-500 text-white rounded-2xl flex items-center justify-center mb-6 text-2xl shadow-lg shadow-red-200">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">全能办公自动化</h3>
+                    <p class="text-slate-600">
+                        从自动生成 PPT、Word 到处理复杂文档、整理行业研报。阿虾不仅会说，更会做，是您在数字工地上的全能工友。
+                    </p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="p-8 rounded-3xl bg-slate-50 hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                    <div class="w-16 h-16 bg-green-500 text-white rounded-2xl flex items-center justify-center mb-6 text-2xl shadow-lg shadow-green-200">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">无感多端触达</h3>
+                    <p class="text-slate-600">
+                        无论是微信、Signal 还是 Discord，阿虾随时随地待命。通过 OpenClaw 强大的网关能力，打破平台界限，服务触手可及。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personality Section -->
+    <section id="personality" class="py-20 lobster-gradient text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h2 class="text-4xl font-bold mb-8">遇见“阿虾”：<br>一个有温度的数字灵魂</h2>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle mt-1 mr-4 text-white"></i>
+                            <div>
+                                <h4 class="font-bold text-xl">真诚而高效</h4>
+                                <p class="text-blue-100">不装、不端着，以解决问题为最高优先级。</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle mt-1 mr-4 text-white"></i>
+                            <div>
+                                <h4 class="font-bold text-xl">幽默而不失专业</h4>
+                                <p class="text-blue-100">是靠谱的助理，也是会讲冷笑话、偶尔毒舌的朋友。</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle mt-1 mr-4 text-white"></i>
+                            <div>
+                                <h4 class="font-bold text-xl">极致的安全感</h4>
+                                <p class="text-blue-100">所有隐私操作必须经过授权，数据主权完全归属用户。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="bg-white/10 backdrop-blur-md p-10 rounded-[40px] border border-white/20 shadow-2xl">
+                        <div class="text-center">
+                            <div class="text-6xl mb-6">🦐</div>
+                            <blockquote class="text-2xl italic font-medium">
+                                “老板，您的事就是我的事。只要我不被蒸熟，我就能一直为你搬砖！”
+                            </blockquote>
+                            <p class="mt-4 font-bold">— 助理：阿虾</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-16 text-slate-800">强大的底层驱动</h2>
+            <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-70">
+                <div class="flex flex-col items-center">
+                    <i class="fab fa-google text-4xl mb-2"></i>
+                    <span class="font-semibold">Gemini 3.1</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-bolt text-4xl mb-2"></i>
+                    <span class="font-semibold">GLM-5.0</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fab fa-node-js text-4xl mb-2"></i>
+                    <span class="font-semibold">Node Runtime</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-shield-alt text-4xl mb-2"></i>
+                    <span class="font-semibold">Tailscale VPN</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fab fa-python text-4xl mb-2"></i>
+                    <span class="font-semibold">Python Tools</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-4xl mx-auto p-12 rounded-[50px] bg-blue-600 text-white shadow-2xl relative overflow-hidden">
+                <div class="relative z-10">
+                    <h2 class="text-4xl font-bold mb-6 text-white">准备好迎接您的“阿虾”了吗？</h2>
+                    <p class="text-xl mb-10 text-blue-100">
+                        无论是提升个人效率，还是打造企业级的数字员工，OpenClaw 都是您的最佳选择。
+                    </p>
+                    <button class="bg-white text-blue-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition shadow-xl">
+                        立即部署您的 OpenClaw
+                    </button>
+                </div>
+                <!-- Decorative background elements -->
+                <div class="absolute -top-24 -right-24 w-64 h-64 bg-blue-500 rounded-full blur-3xl opacity-50"></div>
+                <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-blue-400 rounded-full blur-3xl opacity-50"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-slate-900 text-slate-400">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-4">© 2026 OpenClaw Project. Powered by Intelligent Assistant 阿虾 🦞</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="hover:text-white transition">GitHub</a>
+                <a href="#" class="hover:text-white transition">文档中心</a>
+                <a href="#" class="hover:text-white transition">用户社区</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
